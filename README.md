@@ -2,7 +2,7 @@
 
 ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
 
-As a challenge submission to Gitcoin Open Data Science Hackathon, Foxtail is a method-based analysis into testing the relationship between on-chain data and the behaviors of potential Sybils.
+As a challenge submission to Gitcoin Open Data Science, Foxtail is a method-based analysis into testing the relationship between on-chain data and the behaviors of potential sybils.
 
  <img src="https://i.imgur.com/P5WKBbe.png" width="600"/>
 
@@ -12,7 +12,7 @@ As a challenge submission to Gitcoin Open Data Science Hackathon, Foxtail is a m
 - [Variables](#variables)
 - [Methodology](#methodology)
 - [Discussion](#discussion)
-- [Limitations](#limitations)
+- [Notes](#notes)
 - [Contributing](#contributing)
 
 # Abstract
@@ -47,7 +47,7 @@ In an effort to do so, there is a constant initiative to prevent and mitigate il
 
 1. As a springboard, data from `hackathon-contributions-dataset_v2.csv` is utilized. In the R code, it is hereby referred to as `data.csv`. This can be retrieved from https://drive.google.com/drive/folders/17OdrV7SA0I56aDMwqxB6jMwoY3tjSf5w.
 
-For our purposes, the data is cleaned and subset into transactions made on the `eth_std` chain. 5 random transactions, due to respective API limits, are then selected.
+For our purposes, the data is cleaned and subset into transactions made on the `eth_std` chain. 5 random transactions are then selected. Both of these are due to respective resources (e.g. API) limitations.
 
 For reproducibility purposes, a random seed of `1210` is specified. This seed can be iterated over and changed to produce larger subsets of more variability.
 
@@ -138,7 +138,7 @@ It is believed that likely human behavior leads to sybils avoiding any contact w
 - funds are just exchanging wallets between the same user,
 - suspicious activity is obfuscated by insignificant activity, and
 
-**This is the fundamental assumption that Foxtail is built on.**
+**This is the fundamental assumption that Foxtail is theorized on.** Foxtail aims to strengthen the interpretation of information that Gitcoin already has. As far as I was made aware, this included an aggregate list of suspected sybils.
 
 Between these two sets of variables with the information gathered, suspicious behavior is likely if:
 
@@ -146,8 +146,25 @@ Between these two sets of variables with the information gathered, suspicious be
 - a wallet has at least one interaction with that of a suspected sybil, or
 - after a contribution, funds cycle back into another wallet with an already recorded contribution.
 
-# Limitations
+# Notes
 
-At its present state, Foxtail is a proof-of-concept. However, given its already implemented structure, it is relatively trivial to expand on it.
+At its present state, Foxtail is a proof-of-concept. However, given its already implemented structure and modular nature, it would not take much work to expand on it.
 
-I only found out about this hackathon three weeks into its opened time committment. Thus, I only had a week to put together a work product. Between other commitments, I was limited into understanding the data set and premise of the problem, exploring the Gitcoin ecosystem and related literature, and ideating means of interpretation and prediction of past, present, and future data.
+I only found out about the bounty three weeks into its opened time committment. Thus, I only had a week to put together a work product. Between other commitments, I was limited into understanding the data set and premise of the problem, exploring the Gitcoin ecosystem and related literature, and ideating the ways and means of interpretation and prediction of provided and supplemental data.
+
+Nevertheless, I kept in mind the ideal standard of putting together a work product that:
+
+- can be expanded and built on top of,
+- has long-term flexibility and reproducibility, and
+- is easily reusable.
+
+# Contributing
+
+[Zachary Will Sy](https://www.linkedin.com/in/zwcsy/)<br>
+Junior at Purdue University, IN<br>
+
+BSc Computer Science – Specialization in Security<br>
+BA Political Science – Public Policy and Methodologies in Tech<br>
+
+Email: alpinemail (at) zsy (dot) sh<br>
+Discord: zachio (hashtag) 1557
