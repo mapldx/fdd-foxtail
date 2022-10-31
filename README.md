@@ -123,7 +123,7 @@ Foxtail aims to be a modular solution that makes it easier to retrive and interp
 Given the boilerplate structure already implemented, it would be relatively simple to:
 
 - add functionality to probe other Web 3 social platforms as briefly demonstrated above, and
-- add functionality to investigate transactions made on other chains such as `zksync`.
+- add functionality to investigate transactions as on-chain signals made on other chains such as `zksync` and `polygon`.
 
 1. Why `has_lens`?
 
