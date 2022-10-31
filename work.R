@@ -66,7 +66,7 @@ data['first_tx_contractAddress'] <- NA
 for (row in 1:nrow(data)) {
   ref <- data[row, 1]
   
-  apikey <- "XMIJRE7QDWTSHMRIYQUJV9AZ6NKN2VCCNK"
+  apikey <- INSERT_YOUR_ETHERSCAN_API_KEY
   req <- GET("https://api.etherscan.io/api", query = list(module = "account", action = "txlist", address = ref, startblock = "0", endblock = "99999999",
                                           page = "1", offset = "10", sort = "asc", apikey = apikey))
   res <- content(req)
